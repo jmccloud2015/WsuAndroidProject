@@ -1,2 +1,2 @@
 # WsuAndroidProject
-Trivia Game 
+Trivia Games
