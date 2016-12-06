@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbackgrnd"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triva.TriviaActivity" >
+
+    <Button
+        android:id="@+id/QuestionButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnswerTextView1"
+        android:layout_below="@+id/AnswerTextView1"
+        android:layout_marginTop="30dp"
+        android:text="Show Next Question" />
+
+    <TextView
+        android:id="@+id/AnswerTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_alignLeft="@+id/AnswerText1"
+        android:layout_below="@+id/AnswerButton1"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:id="@+id/QuestionTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_alignLeft="@+id/AnswerButton1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:id="@+id/AnswerButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnswerTextView1"
+        android:layout_below="@+id/QuestionTextView1"
+        android:layout_marginTop="77dp"
+        android:text="Check Answer" />
+
+    <EditText
+        android:id="@+id/AnswerText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_below="@+id/QuestionTextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/ScoreCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CorrectTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/QuestionTextView1"
+        android:layout_alignTop="@+id/ScoreCount1"
+        android:text="Correct Answers"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>
